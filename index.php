@@ -27,7 +27,7 @@ else
         <?php
         if(isset($mensagemErro) && !empty($mensagemErro))
           {
-          echo '<div class="alert alert-danger">'
+          echo '<div class="alert alert-danger">';
             echo $mensagemErro;
             echo '</div>';
         

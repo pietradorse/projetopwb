@@ -14,7 +14,12 @@
                         </a>
                     </div> <!-- fecha col-2 -->
                     <div class="col-8">
-
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control">
+                            <button class="btn btn-primary" type="button">
+                                Pesquisar
+                            </button>
+                        </div>
                     </div> <!-- fecha col-8 -->
                 </div> <!-- fecha row -->
 
