@@ -1,0 +1,31 @@
+<?php include "cabecalho.php"; ?>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                Pesquisar clientes
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-2">
+                        <a href="novoCliente.php" class="btn btn-success">
+                            Novo cliente
+                        </a>
+                    </div> <!-- fecha col-2 -->
+                    <div class="col-8">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control">
+                            <button class="btn btn-primary" type="button">
+                                Pesquisar
+                            </button>
+                        </div>
+                    </div> <!-- fecha col-8 -->
+                </div> <!-- fecha row -->
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<?php include "rodape.php"; ?>

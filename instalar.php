@@ -20,10 +20,10 @@ else
     echo "Houve um erro ao rodar a instalação";
 }
 
-$sql = "CREATE TABLE IF NOT EXISTS cliente(
+$sql = "CREATE TABLE IF NOT EXISTS cliente (
     id_cliente INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(150) NOT NULL,
-    cpf_cnpj VARCHAR(18) NOT FULL UNIQUE,
+    cpf_cnpj VARCHAR(18) NOT NULL UNIQUE,
     email VARCHAR(150),
     telefone VARCHAR(20),
     data_nascimento DATE,
@@ -34,7 +34,8 @@ $sql = "CREATE TABLE IF NOT EXISTS cliente(
     cidade VARCHAR(100),
     estado CHAR(2),
     cep VARCHAR(9),
-    ativo BOOLEAN NOT FULL DEFAULT TRUE
+    ativo BOOLEAN NOT NULL DEFAULT TRUE
+);
 ";
 
 $resultado = mysqli_query($conexao, $sql);
@@ -46,6 +47,7 @@ else
 {
     echo "Houve um erro ao rodar a instalação";
 }
+
 
 
 ?>

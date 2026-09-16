@@ -18,12 +18,12 @@ if(count($_POST) > 0)
 
         mysqli_query($conexao, $sql);
 
-        header('location: usarios.php?mensagem=Cadastrado com sucesso');
+        header('location: usuarios.php?mensagem=Cadastrado com sucesso');
 
     }
     else
     {
-        header('location: usuarios.php'); <!-- Fazer uma guia para clientes --!>
+        header('location: usuarios.php'); //<!-- Fazer uma guia para clientes --!>
     }
 
 ?>
